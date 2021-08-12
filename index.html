@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Montserrat:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -21,7 +21,32 @@
     <header>
       <h1>BlogSpace</h1>
     </header>
-    <main id="posts"></main>
+    <main>
+      <section>
+        <form action="">
+          <label for="title">Title</label>
+          <input
+            class="input-box"
+            type="text"
+            name="title"
+            id="title"
+            autocomplete="off"
+          />
+          <label for="body">Content</label>
+          <textarea
+            class="input-box"
+            name="body"
+            id="body"
+            cols="29"
+            rows="8"
+            autocomplete="off"
+          >
+          </textarea>
+          <button class="btn btn--primary" type="submit">POST</button>
+        </form>
+      </section>
+      <section id="posts"></section>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>

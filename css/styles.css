@@ -3,7 +3,7 @@
 /* Global variables*/
 
 :root {
-  --color-body: #33363a;
+  --color-body: #394755;
 }
 
 /* Universal Selector */
@@ -41,16 +41,16 @@ h2,
 p {
   margin: 0;
 }
-h1,
+
 h2 {
   margin-bottom: 1rem;
   line-height: 1.1;
 }
 
 h1 {
-  font-size: 2em;
-  font-family: "Karla", sans-serif;
   color: #fff;
+  font-family: "Karla", sans-serif;
+  font-size: 1.8em;
 }
 
 h2 {
@@ -70,30 +70,84 @@ h3 {
 /* Components 
 ---------------- */
 
-.container {
-  margin: 0 auto;
-  max-width: 1140px;
-}
-
 /* Header */
 
+main {
+  border: 10px solid #98dacc;
+  margin: 0 auto;
+  max-width: 50ch;
+}
+
 header {
-  /* height: 3em; */
-  display: flex;
   align-items: center;
   background-color: #3dbeff;
+  display: flex;
   padding: 2rem;
 }
 
-h1 {
-  margin: 0;
+/* Form */
+
+form {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #fff;
+  font-weight: 500;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.input-box {
+  border: none;
+  min-height: 5rem;
+  outline: none;
+  padding: 1rem 2rem;
+  resize: none;
+  width: 100%;
+}
+
+input.input-box {
+  border-radius: 17px;
+}
+
+textarea.input-box {
+  border-radius: 20px;
+}
+
+form .btn {
+  align-self: center;
+  margin-top: 1rem;
+}
+
+/* Button */
+
+.btn {
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  color: #fff;
+  background-color: #ff7163;
+}
+
+.btn--primary:hover {
+  background-color: #d4060e;
 }
 
 /* Posts */
 
 .post {
   margin: 3rem auto;
-  max-width: 50ch;
   background-color: #fff;
   padding: 2rem;
+  border-radius: 20px;
 }
