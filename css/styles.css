@@ -29,8 +29,9 @@ html {
 
 body {
   background-color: #fff;
+  background-color: #98dacc;
   color: var(--color-body);
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -48,6 +49,8 @@ h2 {
 
 h1 {
   font-size: 2em;
+  font-family: "Karla", sans-serif;
+  color: #fff;
 }
 
 h2 {
@@ -72,9 +75,25 @@ h3 {
   max-width: 1140px;
 }
 
+/* Header */
+
+header {
+  /* height: 3em; */
+  display: flex;
+  align-items: center;
+  background-color: #3dbeff;
+  padding: 2rem;
+}
+
+h1 {
+  margin: 0;
+}
+
 /* Posts */
 
 .post {
   margin: 3rem auto;
   max-width: 50ch;
+  background-color: #fff;
+  padding: 2rem;
 }
