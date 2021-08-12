@@ -3,7 +3,7 @@
 /* Global variables*/
 
 :root {
-  --color-body: #ced5de;
+  --color-body: #33363a;
 }
 
 /* Universal Selector */
@@ -19,7 +19,7 @@
 /* Typography */
 
 ::selection {
-  background: var(--color-primary);
+  background: #2584ff;
   color: #fff;
 }
 
@@ -43,7 +43,7 @@ p {
 h1,
 h2 {
   margin-bottom: 1rem;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 h1 {
@@ -66,3 +66,15 @@ h3 {
 
 /* Components 
 ---------------- */
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+/* Posts */
+
+.post {
+  margin: 3rem auto;
+  max-width: 50ch;
+}
