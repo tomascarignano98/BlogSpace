@@ -28,7 +28,6 @@ html {
 }
 
 body {
-  background-color: #fff;
   background-color: #98dacc;
   color: var(--color-body);
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
@@ -89,8 +88,11 @@ header {
 
 form {
   align-items: flex-start;
+  background-color: #ff7163;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
+  padding: 1rem 2rem 2rem;
 }
 
 label {
@@ -102,6 +104,7 @@ label {
 
 .input-box {
   border: none;
+  color: var(--color-body);
   min-height: 5rem;
   outline: none;
   padding: 1rem 2rem;
@@ -136,11 +139,12 @@ form .btn {
 
 .btn--primary {
   color: #fff;
-  background-color: #ff7163;
+  background-color: #d4060e;
 }
 
 .btn--primary:hover {
-  background-color: #d4060e;
+  color: #d4060e;
+  background-color: #fff;
 }
 
 /* Posts */
